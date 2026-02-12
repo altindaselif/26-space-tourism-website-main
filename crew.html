@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Space Tourism Website</title>
+  </head>
+  <body class="crew-body">
+    <header class="header-container">
+      <a class="header-logo-link" href="#"
+        ><img
+          class="header-logo-img"
+          src="images/shared/logo.svg"
+          alt="Website Logo"
+      /></a>
+      <div class="header-line"></div>
+      <button class="header-menu-open-button hidden">
+        <img
+          class="header-menu-open-icon"
+          src="images/shared/icon-hamburger.svg"
+          alt="Menu Open Icon"
+        />
+      </button>
+      <nav class="header-navbar">
+        <button class="navbar-menu-close-button hidden">
+          <img
+            class="navbar-menu-close-icon"
+            src="images/shared/icon-close.svg"
+            alt="Menu Close Icon"
+          />
+        </button>
+        <ul class="navbar-link-container">
+          <li class="navbar-item">
+            <a class="navbar-link" href="index.html">
+              <span class="link-number">00</span> Home</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="destination.html">
+              <span class="link-number">01</span> Destination</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" href="crew.html">
+              <span class="link-number">02</span> Crew</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="technology.html">
+              <span class="link-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-grid crew-main-grid">
+      <h5 class="main-title">
+        <span class="main-title-number">02</span>
+        Meet your crew
+      </h5>
+      <div class="crew-content-container">
+        <h5 class="crew-content-pre-title">Commander</h5>
+        <h1 class="crew-content-title">Douglas Hurley</h1>
+        <p class="crew-content-text">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+        <div class="crew-indicators">
+          <button
+            class="crew-indicator active"
+            data-name="Douglas Hurley"
+          ></button>
+          <button class="crew-indicator" data-name="Mark Shuttleworth"></button>
+          <button class="crew-indicator" data-name="Victor Glover"></button>
+          <button class="crew-indicator" data-name="Anousheh Ansari"></button>
+        </div>
+      </div>
+      <div class="crew-img-container">
+        <img
+          class="crew-img"
+          src="images/crew/image-douglas-hurley.webp"
+          alt="Douglas Hurley Picture"
+        />
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Space Tourism Website</title>
+  </head>
+  <body class="destination-body">
+    <header class="header-container">
+      <a class="header-logo-link" href="#"
+        ><img
+          class="header-logo-img"
+          src="images/shared/logo.svg"
+          alt="Website Logo"
+      /></a>
+      <div class="header-line"></div>
+      <button class="header-menu-open-button hidden">
+        <img
+          class="header-menu-open-icon"
+          src="images/shared/icon-hamburger.svg"
+          alt="Menu Open Icon"
+        />
+      </button>
+      <nav class="header-navbar">
+        <button class="navbar-menu-close-button hidden">
+          <img
+            class="navbar-menu-close-icon"
+            src="images/shared/icon-close.svg"
+            alt="Menu Close Icon"
+          />
+        </button>
+        <ul class="navbar-link-container">
+          <li class="navbar-item">
+            <a class="navbar-link" href="index.html">
+              <span class="link-number">00</span> Home</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" href="destination.html">
+              <span class="link-number">01</span> Destination</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="crew.html">
+              <span class="link-number">02</span> Crew</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="technology.html">
+              <span class="link-number">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-grid dest-main-grid">
+      <h5 class="main-title">
+        <span class="main-title-number">01</span>
+        Pick your destination
+      </h5>
+      <div class="dest-img-container">
+        <img
+          class="dest-img"
+          src="images/destination/image-moon.webp"
+          alt="Moon Picture"
+        />
+      </div>
+      <div class="dest-content-container">
+        <ul class="dest-navbar">
+          <li class="dest-navbar-item">
+            <button class="dest-navbar-button active" data-name="Moon">
+              Moon
+            </button>
+          </li>
+          <li class="dest-navbar-item">
+            <button class="dest-navbar-button" data-name="Mars">Mars</button>
+          </li>
+          <li class="dest-navbar-item">
+            <button class="dest-navbar-button" data-name="Europa">
+              Europa
+            </button>
+          </li>
+          <li class="dest-navbar-item">
+            <button class="dest-navbar-button" data-name="Titan">Titan</button>
+          </li>
+        </ul>
+        <h1 class="dest-content-title">Moon</h1>
+        <p class="dest-content-text">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="dest-stats-container">
+          <div class="dest-stat-container">
+            <p class="dest-stat-title">Avg. distance</p>
+            <p class="dest-stat-value dest-stat-distance">384,400 km</p>
+          </div>
+          <div class="dest-stat-container">
+            <p class="dest-stat-title">Est. travel time</p>
+            <p class="dest-stat-value dest-stat-travel">3 days</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
