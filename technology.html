@@ -24,26 +24,37 @@
   </head>
   <body class="technology-body">
     <header class="header-container">
-      <a class="header-logo-link" href="#"
+      <a class="header-logo-link" href="#" aria-label="Space Tourism Homepage"
         ><img
           class="header-logo-img"
           src="images/shared/logo.svg"
-          alt="Website Logo"
+          alt=""
+          aria-hidden="true"
       /></a>
       <div class="header-line"></div>
-      <button class="header-menu-open-button hidden">
+      <button
+        class="header-menu-open-button hidden"
+        type="button"
+        aria-label="Open Menu"
+      >
         <img
           class="header-menu-open-icon"
           src="images/shared/icon-hamburger.svg"
-          alt="Menu Open Icon"
+          alt=""
+          aria-hidden="true"
         />
       </button>
       <nav class="header-navbar">
-        <button class="navbar-menu-close-button hidden">
+        <button
+          class="navbar-menu-close-button hidden"
+          type="button"
+          aria-label="Close Menu"
+        >
           <img
             class="navbar-menu-close-icon"
             src="images/shared/icon-close.svg"
-            alt="Menu Close Icon"
+            alt=""
+            aria-hidden="true"
           />
         </button>
         <ul class="navbar-link-container">
@@ -77,11 +88,30 @@
       </h5>
       <div class="tech-content-container">
         <div class="tech-indicators">
-          <button class="tech-indicator active" data-name="Launch vehicle">
+          <button
+            class="tech-indicator active"
+            data-name="Launch vehicle"
+            type="button"
+            aria-label="View Launch Vehicle"
+          >
             1
           </button>
-          <button class="tech-indicator" data-name="Spaceport">2</button>
-          <button class="tech-indicator" data-name="Space capsule">3</button>
+          <button
+            class="tech-indicator"
+            data-name="Spaceport"
+            type="button"
+            aria-label="View Spaceport"
+          >
+            2
+          </button>
+          <button
+            class="tech-indicator"
+            data-name="Space capsule"
+            type="button"
+            aria-label="View Space Capsule"
+          >
+            3
+          </button>
         </div>
         <div class="tech-infos">
           <h5 class="tech-content-pre-title">The terminology...</h5>
@@ -104,7 +134,8 @@
           <img
             class="tech-img"
             src="images/technology/image-launch-vehicle-portrait.jpg"
-            alt="Launch Vehicle Picture"
+            alt="Launch Vehicle"
+            loading="lazy"
         /></picture>
       </div>
     </main>

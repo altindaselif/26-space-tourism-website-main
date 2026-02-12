@@ -1,6 +1,7 @@
 const menuOpenButton = document.querySelector(".header-menu-open-button");
 const menuCloseButton = document.querySelector(".navbar-menu-close-button");
 const navbarMenu = document.querySelector(".header-navbar");
+
 const destNavbarButtons = document.querySelectorAll(".dest-navbar-button");
 const crewIndicators = document.querySelectorAll(".crew-indicator");
 const techIndicators = document.querySelectorAll(".tech-indicator");
@@ -19,8 +20,6 @@ const fetchData = async () => {
     if (!response.ok) throw new Error("Failed to load data.");
 
     jsonData = await response.json();
-
-    console.log(jsonData);
   } catch (error) {
     console.error("Error:", error);
   }
@@ -63,6 +62,8 @@ if (destNavbarButtons.length > 0) {
 
   destNavbarButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
+      if (!jsonData) return;
+
       destNavbarButtons.forEach((btn) => btn.classList.remove("active"));
 
       const clickedButton = e.currentTarget;
@@ -97,6 +98,8 @@ if (crewIndicators.length > 0) {
 
   crewIndicators.forEach((button) => {
     button.addEventListener("click", (e) => {
+      if (!jsonData) return;
+
       crewIndicators.forEach((btn) => btn.classList.remove("active"));
 
       const clickedButton = e.currentTarget;
@@ -135,6 +138,8 @@ if (techIndicators.length > 0) {
 
   techIndicators.forEach((button) => {
     button.addEventListener("click", (e) => {
+      if (!jsonData) return;
+
       techIndicators.forEach((btn) => btn.classList.remove("active"));
 
       const clickedButton = e.currentTarget;

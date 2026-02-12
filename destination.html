@@ -24,26 +24,37 @@
   </head>
   <body class="destination-body">
     <header class="header-container">
-      <a class="header-logo-link" href="#"
+      <a class="header-logo-link" href="#" aria-label="Space Tourism Homepage"
         ><img
           class="header-logo-img"
           src="images/shared/logo.svg"
-          alt="Website Logo"
+          alt=""
+          aria-hidden="true"
       /></a>
       <div class="header-line"></div>
-      <button class="header-menu-open-button hidden">
+      <button
+        class="header-menu-open-button hidden"
+        type="button"
+        aria-label="Open Menu"
+      >
         <img
           class="header-menu-open-icon"
           src="images/shared/icon-hamburger.svg"
-          alt="Menu Open Icon"
+          alt=""
+          aria-hidden="true"
         />
       </button>
       <nav class="header-navbar">
-        <button class="navbar-menu-close-button hidden">
+        <button
+          class="navbar-menu-close-button hidden"
+          type="button"
+          aria-label="Close Menu"
+        >
           <img
             class="navbar-menu-close-icon"
             src="images/shared/icon-close.svg"
-            alt="Menu Close Icon"
+            alt=""
+            aria-hidden="true"
           />
         </button>
         <ul class="navbar-link-container">
@@ -80,25 +91,34 @@
           class="dest-img"
           src="images/destination/image-moon.webp"
           alt="Moon Picture"
+          loading="lazy"
         />
       </div>
       <div class="dest-content-container">
         <ul class="dest-navbar">
           <li class="dest-navbar-item">
-            <button class="dest-navbar-button active" data-name="Moon">
+            <button
+              class="dest-navbar-button active"
+              data-name="Moon"
+              type="button"
+            >
               Moon
             </button>
           </li>
           <li class="dest-navbar-item">
-            <button class="dest-navbar-button" data-name="Mars">Mars</button>
+            <button class="dest-navbar-button" data-name="Mars" type="button">
+              Mars
+            </button>
           </li>
           <li class="dest-navbar-item">
-            <button class="dest-navbar-button" data-name="Europa">
+            <button class="dest-navbar-button" data-name="Europa" type="button">
               Europa
             </button>
           </li>
           <li class="dest-navbar-item">
-            <button class="dest-navbar-button" data-name="Titan">Titan</button>
+            <button class="dest-navbar-button" data-name="Titan" type="button">
+              Titan
+            </button>
           </li>
         </ul>
         <h1 class="dest-content-title">Moon</h1>
